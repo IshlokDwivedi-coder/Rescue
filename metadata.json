@@ -1,0 +1,6 @@
+{
+  "name": "Rescue",
+  "description": "An AI agent that detects tasks you're about to miss and autonomously reschedules them or drafts extension emails.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
