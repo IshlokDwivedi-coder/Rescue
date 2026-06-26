@@ -137,7 +137,7 @@ export default function App() {
                   🚨 RESCUE ME
                   <div className="absolute inset-0 rounded-full border-2 border-red-400 animate-ping opacity-20"></div>
                 </button>
-                <p className="text-[10px] text-slate-500 mt-4 uppercase tracking-widest">Initializing Gemini-3.5-Flash</p>
+                <p className="text-[10px] text-slate-500 mt-4 uppercase tracking-widest">Initializing Gemini-2.5-Flash</p>
               </div>
             ) : (
               <div className="flex-1 bg-white/5 border border-white/10 rounded-2xl p-6 overflow-hidden flex flex-col">
@@ -244,7 +244,7 @@ export default function App() {
 
         <footer className="mt-8 flex justify-between items-center text-[10px] text-slate-600 uppercase tracking-[0.2em]">
           <div>v1.0.4-agentic-beta</div>
-          <div className="hidden sm:block">Powered by Gemini-3.5-Flash & Google Cloud Run</div>
+          <div className="hidden sm:block">Powered by Gemini-2.5-Flash & Google Cloud Run</div>
           <div>User: Solo-Dev-Hackathon</div>
         </footer>
       </div>

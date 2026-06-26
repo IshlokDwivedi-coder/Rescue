@@ -63,7 +63,7 @@ Reason about the risk first, then act in a sensible order:
 Summarize your findings.`;
 
       let chat = ai.chats.create({
-        model: "gemini-3.5-flash",
+        model: "gemini-2.5-flash",
         config: {
           systemInstruction: systemPrompt,
           tools: [{ functionDeclarations: agentTools }]

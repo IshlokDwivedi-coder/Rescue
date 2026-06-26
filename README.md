@@ -3,10 +3,10 @@
 An AI agent that detects tasks you're about to miss and autonomously reschedules them or drafts extension emails.
 
 ## How the Agent Works
-The application uses a real plan-act-observe agent loop via Gemini Function Calling. When triggered, the Express backend prompts the `gemini-3.5-flash` model with the highest-risk task and three tools: `breakdown_task`, `create_calendar_event`, and `draft_email`. Gemini evaluates the task risk, calls tools to break it down and schedule it, evaluates the result, and loops until the issue is mitigated (capped at 6 iterations). The steps are streamed live to the frontend via Server-Sent Events.
+The application uses a real plan-act-observe agent loop via Gemini Function Calling. When triggered, the Express backend prompts the `gemini-2.5-flash` model with the highest-risk task and three tools: `breakdown_task`, `create_calendar_event`, and `draft_email`. Gemini evaluates the task risk, calls tools to break it down and schedule it, evaluates the result, and loops until the issue is mitigated (capped at 6 iterations). The steps are streamed live to the frontend via Server-Sent Events.
 
 ## Google Technologies Used
-* **Gemini API** (`@google/genai` SDK, using the latest `gemini-3.5-flash` model for advanced function calling)
+* **Gemini API** (`@google/genai` SDK, using the latest `gemini-2.5-flash` model for advanced function calling)
 * **Gemini Function Calling** (Agentic Tools)
 * **Google Cloud Run** (Deployment)
 
